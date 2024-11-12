@@ -1,1 +1,3 @@
 # test-misconfig-action
+
+test
