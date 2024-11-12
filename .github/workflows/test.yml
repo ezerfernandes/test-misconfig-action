@@ -12,6 +12,7 @@ jobs:
         id: scan
         uses: ezerfernandes/misconfig-github-action@v0.0.3
         with:
+          github_token: iskdisjdijs
           path: .
           framework: terraform,terraform_plan
           skip_check: CKV_AWS_21,CKV_AWS_178,CKV_AWS_195
