@@ -1,0 +1,16 @@
+name: Test External Action
+on: [pull_request]
+
+jobs:
+  test-external-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Scan for misconfigurations
+        uses: ezerfernandes/misconfig-github-action@v1.0.0
+        with:
+          path: .
+          framework: terraform,terraform_plan
+          skip_check: CKV_AWS_21,CKV_AWS_178,CKV_AWS_195
