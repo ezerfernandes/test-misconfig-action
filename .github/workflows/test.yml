@@ -10,7 +10,7 @@ jobs:
 
       - name: Scan for misconfigurations
         id: scan
-        uses: ezerfernandes/misconfig-github-action@v0.0.2
+        uses: ezerfernandes/misconfig-github-action@v0.0.3
         with:
           path: .
           framework: terraform,terraform_plan
