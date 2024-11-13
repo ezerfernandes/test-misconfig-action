@@ -10,7 +10,7 @@ jobs:
 
       - name: Scan for misconfigurations
         id: scan
-        uses: ezerfernandes/misconfig-github-action@v0.0.5
+        uses: ezerfernandes/misconfig-github-action@v0.0.8
         with:
           github_token: iskdisjdijs
           path: .
